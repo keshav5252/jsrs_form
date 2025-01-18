@@ -7,7 +7,7 @@
     <title>Register - Join Us - Jai Shree Ram Sena</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=help" />
-        <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
             <img src="logo.webp" alt="logo">
             <div>
                 <p>For Establishment of the Hindu Rashtra</p>
-                <h1>Jai Shree Ram Sena (JSRS)</h1>
+                <h1>Free Hindu Temples Movement</h1>
             </div>
         </nav>
     </header>
@@ -29,13 +29,14 @@
         <div class="heading-tag">
             <div class="container heading">
                 <h1>Register here - </h1>
-                <span title="help" onclick='alert("Please contact us for any query at our email")' class="material-symbols-outlined">help</span>
+                <span title="help" onclick='alert("Please contact us for any query at our email")'
+                    class="material-symbols-outlined">help</span>
             </div>
         </div>
 
         <div class="container">
             <div class="form">
-                <form id="mainForm" name="mainForm" method="POST" >
+                <form id="mainForm" name="mainForm" method="POST">
                     <fieldset>
                         <legend align="center">Personal details</legend>
 
@@ -52,10 +53,24 @@
                         <div class="form-group">
                             <label for="number">Mobile number* :</label>
                             <div class="f-group">
-                                <span>+91</span><input type="number" name="number" id="number" placeholder="Enter your number"
-                                    required>
+                                <span>+91</span><input type="number" name="number" id="number"
+                                    placeholder="Enter your number" required>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender* :</label>
+                            <div class="f-group">
+                                <select id="gender" name="gender" required>
+                                    <option value="Select Your Gender" disabled selected>Select Your Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
 
                         <div class="form-group">
                             <label for="country">Country* :</label>
@@ -97,7 +112,8 @@
                                 <option value="Delhi">Delhi</option>
                                 <option value="Chandigarh">Chandigarh</option>
                                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and
+                                    Daman and Diu</option>
                                 <option value="Jammu and Kashmir">Jammu and Kashmir</option>
                                 <option value="Ladakh">Ladakh</option>
                                 <option value="Lakshadweep">Lakshadweep</option>
@@ -124,7 +140,8 @@
 
                         <div class="form-group">
                             <label for="yob">Year of Birth* :</label>
-                            <input type="number" name="year of birth" id="yob" placeholder="Enter your year of birth. Ex- 1986" required>
+                            <input type="number" name="year of birth" id="yob"
+                                placeholder="Enter your year of birth. Ex- 1986" required>
                         </div>
 
                     </fieldset>
@@ -133,15 +150,18 @@
 
                         <div class="form-group">
                             <label for="wnum">WhatsApp number:</label>
-                            <input type="number" name="whatsapp number" id="wnum" placeholder="Enter your whatsapp number" >
+                            <input type="number" name="whatsapp number" id="wnum"
+                                placeholder="Enter your whatsapp number">
                         </div>
                         <div class="form-group">
                             <label for="address">Address:</label>
-                            <textarea type="text" name="address" id="address" placeholder="Enter your address" ></textarea>
+                            <textarea type="text" name="address" id="address"
+                                placeholder="Enter your address"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="iccb">I can contribute by:</label>
-                            <textarea type="text" name="i can contribute by" id="iccb" placeholder="Do you have any skills or at post to help us ?" ></textarea>
+                            <textarea type="text" name="i can contribute by" id="iccb"
+                                placeholder="Do you have any skills or at post to help us ?"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="occupation">Your occupation* :</label>
@@ -166,7 +186,8 @@
                                 <option value="graphic_designer">Graphic Designer</option>
                                 <option value="other">other</option>
                             </select>
-                            <input type="text" id="other_occupation" name="other occupation" placeholder="Please specify your occupation" style="margin-top: 15px;">
+                            <input type="text" id="other_occupation" name="other occupation"
+                                placeholder="Please specify your occupation" style="margin-top: 15px;">
                         </div>
                     </fieldset>
 

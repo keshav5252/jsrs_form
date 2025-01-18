@@ -52,7 +52,7 @@ nav {
         h1 {
             display: block !important;
             color: rgb(144, 2, 2);
-            font-size: clamp(1rem, 1.5vw, 2rem);
+            font-size: clamp(1.2rem, 1.5vw, 2rem);
         }
 
     }
