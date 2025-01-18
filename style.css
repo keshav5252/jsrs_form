@@ -1,0 +1,219 @@
+/* ------------------------------ Imports ------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------------------------------ Header starting ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-main: antiquewhite;
+    --border-cl: 1px solid rgba(110, 255, 105, 1);
+    --border-nm: 1px solid rgba(110, 255, 105, .3);
+    --bg-input: rgb(245, 245, 245);
+}
+
+header,
+nav {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--bg-main);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    max-width: 1500px;
+    margin: auto;
+    border-bottom: var(--border-cl);
+
+    img {
+        width: auto;
+        height: 70px;
+    }
+
+    div {
+        height: 70px;
+        align-content: center;
+        margin-left: 10px;
+        color: rgb(62, 62, 255);
+        font-weight: 600;
+
+        h1 {
+            display: block !important;
+            color: rgb(144, 2, 2);
+            font-size: clamp(1rem, 1.5vw, 2rem);
+        }
+
+    }
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.heading-tag {
+    background-color: var(--bg-main);
+
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: var(--border-nm);
+
+        h1 {
+            font-size: clamp(1rem, 1.2vw, 1.5rem);
+            display: block !important;
+            font-weight: 500;
+        }
+
+        span {
+            cursor: pointer;
+            opacity: .7;
+        }
+    }
+}
+
+/* ------------------------------ Header ending ------------------------------ */
+
+/* ------------------------------ Main starting ------------------------------ */
+
+form {
+    width: 98%;
+    margin: auto;
+    padding: 10px;
+
+    legend {
+        background-color: var(--bg-main);
+        border: var(--border-cl);
+        padding: 5px 10px;
+
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+    }
+
+    input, select, textarea{
+        padding: 10px 5px;
+        border-radius: 3px;
+        font-size: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+        outline: none;
+        caret-color: blue;
+        resize: vertical;
+        background-color: var(--bg-input);
+    }
+}
+
+.form-group {
+    margin: 20px 0;
+
+    .f-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: 1px solid rgba(67, 67, 67, 0.6);
+            color: #000000b3;
+            background-color: var(--bg-input);
+        }
+    }
+
+    ul {
+        padding: 10px;
+
+        li{
+            padding: 10px 0;
+        }
+    }
+}
+
+#other_occupation {
+    display: none;
+}
+
+input[type='submit'] {
+    padding: 10px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    outline: none;
+    background-color: rgb(34, 34, 34);
+
+    &:hover {
+        background-color: rgb(12, 12, 12);
+    }
+}
+
+#clear {
+    background-color: rgb(238, 104, 104);
+    cursor: pointer;
+    transition-duration: .3s;
+
+    &:hover {
+        background-color: rgb(255, 33, 33);
+    }
+}
+
+/* ------------------------------ Main ending ------------------------------ */
+
+#loader {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(111, 120, 246, 0.5);
+    border: 5px dashed rgb(165, 95, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #25b09b;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+  }
+  @keyframes l27 {
+    100% {transform: rotate(1turn)}
+  }
