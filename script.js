@@ -104,6 +104,7 @@ document.getElementById("mainForm").addEventListener("submit", validateForm);
 
 function submitForm() {
     const loader = document.getElementById("loader");
+
     loader.style.display = "flex";
     const f = new FormData(document.getElementById("mainForm"));
     fetch("https://script.google.com/macros/s/AKfycbxTG2acheoCyk3kuZrVYqCehEjgPQpcBXJ9r7GeeEl1uSBxNp0OW9EjG8vXh_fBM3bHYg/exec", {
@@ -114,7 +115,9 @@ function submitForm() {
     .then(result => {
         loader.style.display = "none";
         alert("Form submitted successfully!");
-        console.log(result);
+    })
+    .then(() => {
+        document.getElementById("mainForm").reset();
     })
     .catch(error => {
         alert("Error submitting form.");
